@@ -1,6 +1,6 @@
 import asyncio
 
-from asnycio_event_bus.event_bus import EventBus
+from asyncio_event_bus.event_bus import EventBus
 
 
 class SomeListener:
