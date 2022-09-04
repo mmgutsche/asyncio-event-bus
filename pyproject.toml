@@ -1,0 +1,30 @@
+
+[project.optional-dependencies]
+tests = [
+  'pytest > 7',
+  'mock >= 1.0.1'
+]
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-ra -q"
+testpaths = [
+    "tests",
+    "integration",
+]
+[tool.poetry]
+name = "asyncio-event-bus"
+version = "0.1.0"
+description = "Asyncio Event Bus provides a simple event system which can be used with async functions."
+authors = ["Marcel Gutsche <marcel.gutsche@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "asyncio_event_bus"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
